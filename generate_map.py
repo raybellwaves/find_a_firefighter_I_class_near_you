@@ -10,13 +10,14 @@ import folium
 import os
 
 
-def create_map(json_file_path, output_html_path):
+def create_map(json_file_path, output_html_path, geojson_boundary_file_path=None):
     """
     Creates a Folium map with markers based on JSON data.
 
     Args:
         json_file_path (str): Path to the input JSON file.
         output_html_path (str): Path to save the generated HTML map.
+        geojson_boundary_file_path (str, optional): Path to the GeoJSON boundary file. Defaults to None.
     """
     try:
         with open(json_file_path, "r") as f:
@@ -30,6 +31,38 @@ def create_map(json_file_path, output_html_path):
 
     # Initialize map centered on Maryland
     maryland_map = folium.Map(location=[39.0, -76.8], zoom_start=8)
+
+    # Add Maryland state border if GeoJSON file is provided
+    if geojson_boundary_file_path:
+        try:
+            with open(geojson_boundary_file_path, "r") as f:
+                maryland_geojson_data = json.load(f)
+
+            def style_function(x):
+                return {
+                    "fillColor": "#ffffff00",  # Transparent fill
+                    "color": "black",  # Border color
+                    "weight": 2,  # Border weight
+                    "fillOpacity": 0.0,  # No fill
+                }
+
+            folium.GeoJson(
+                maryland_geojson_data,
+                style_function=style_function,
+                name="Maryland Border",
+            ).add_to(maryland_map)
+        except FileNotFoundError:
+            print(
+                f"Warning: GeoJSON boundary file not found at {geojson_boundary_file_path}. Border will not be drawn."
+            )
+        except json.JSONDecodeError:
+            print(
+                f"Error: Could not decode GeoJSON from {geojson_boundary_file_path}. Border will not be drawn."
+            )
+        except Exception as e:
+            print(
+                f"Warning: An unexpected error occurred while processing GeoJSON boundary file {geojson_boundary_file_path}: {e}. Border will not be drawn."
+            )
 
     for item in data:
         try:
@@ -110,8 +143,9 @@ def create_map(json_file_path, output_html_path):
 if __name__ == "__main__":
     json_file = "current_firefighter_I_classes.json"
     output_html = "docs/index.html"
+    geojson_boundary_file = "maryland-single.geojson"  # Place your GeoJSON file here
 
-    create_map(json_file, output_html)
+    create_map(json_file, output_html, geojson_boundary_file)
     # Check if the file was created before printing success,
     # as create_map has its own error handling and might return early.
     if os.path.exists(output_html):
