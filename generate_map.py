@@ -175,13 +175,14 @@ def create_map(
             print(
                 f"  Plotting ACTIVE class: '{display_name}' (Course ID: {course_id}) at [{latitude},{longitude}] with color {marker_color}"
             )
+            # Make outline same color as fill
             folium.CircleMarker(
                 location=[latitude, longitude],
                 popup=folium.Popup(popup_html, max_width=300),
                 color=marker_color,
                 fill=True,
                 fill_color=marker_color,
-                fill_opacity=0.7,
+                fill_opacity=1,
                 radius=7,
             ).add_to(maryland_map)
 
@@ -239,10 +240,10 @@ def create_map(
             folium.CircleMarker(
                 location=[latitude, longitude],
                 popup=folium.Popup(popup_html, max_width=300),
-                color="#808080",  # Gray color for border
+                color="#000000",
                 fill=True,
-                fill_color="#D3D3D3",  # LightGray for fill
-                fill_opacity=0.5,
+                fill_color="#000000",
+                fill_opacity=1,
                 radius=6,  # Slightly smaller radius
             ).add_to(maryland_map)
 
