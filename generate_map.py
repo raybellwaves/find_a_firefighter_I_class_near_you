@@ -268,7 +268,7 @@ def create_map(
     </style>
     <div id="mapLegend">
       <div id="legendHeader" onclick="toggleLegend()">
-          <span>Color Legend</span>
+          <span>Legend</span>
           <span id="legendToggleIcon">[+]</span>
       </div>
       <div id="legendContent">
@@ -303,8 +303,10 @@ def create_map(
 
     # Add footer text
     footer_html = """
-                 <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #333;">
-                     Data taken from <a href="https://www.mfri.org/course/msfs/FIRE/101/" target="_blank" style="color: #007bff; text-decoration: none;">https://www.mfri.org/course/msfs/FIRE/101/</a>
+                 <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #333; line-height: 1.6;">
+                     Color is based on month when the class starts. See Legend for more information.
+                     | Data taken from <a href="https://www.mfri.org/course/msfs/FIRE/101/" target="_blank" style="color: #007bff; text-decoration: none;">MFRI Firefighter I Courses</a>
+                     | Source code available on <a href="https://github.com/raybellwaves/find_a_firefighter_I_class_near_you" target="_blank" style="color: #007bff; text-decoration: none;">GitHub</a>
                  </div>
                  """
     maryland_map.get_root().html.add_child(folium.Element(footer_html))
