@@ -42,6 +42,7 @@ def create_map(
     json_file_path,
     output_html_path,
     geojson_boundary_file_path=None,
+    inactive_class_locations_data=None,
 ):
     """
     Creates a Folium map with markers based on JSON data.
@@ -171,6 +172,9 @@ def create_map(
             <a href="{directions_url}" target="_blank">Get Directions</a><br>
             <a href="{register_link}" target="_blank">Register Here</a>
             """
+            print(
+                f"  Plotting ACTIVE class: '{display_name}' (Course ID: {course_id}) at [{latitude},{longitude}] with color {marker_color}"
+            )
             folium.CircleMarker(
                 location=[latitude, longitude],
                 popup=folium.Popup(popup_html, max_width=300),
@@ -191,6 +195,56 @@ def create_map(
                 f"Warning: An unexpected error occurred while processing item {item.get('courseId', 'Unknown CourseID')}: {e}"
             )
             continue
+
+    # Plot inactive class locations
+    if inactive_class_locations_data:
+        for location_name, details in inactive_class_locations_data.items():
+            lat_long_str = details.get("lat_long")
+            start_dates = details.get("start_dates", [])
+
+            if not lat_long_str or not isinstance(lat_long_str, str):
+                print(
+                    f"Warning: Missing or invalid 'lat_long' for inactive location: {location_name}"
+                )
+                continue
+
+            parts = lat_long_str.split(",")
+            if len(parts) != 2:
+                print(
+                    f"Warning: Could not parse latitude and longitude from '{lat_long_str}' for inactive location: {location_name}"
+                )
+                continue
+
+            try:
+                latitude = float(parts[0].strip())
+                longitude = float(parts[1].strip())
+            except ValueError:
+                print(
+                    f"Warning: Could not parse lat/long for inactive location: {location_name}"
+                )
+                continue
+
+            comma_separated_start_dates = ", ".join(
+                sorted(list(set(s for s in start_dates if s)))
+            )  # Sort and unique
+
+            popup_html = f"""
+            <b>Location Display Name:</b> {location_name}<br>
+            <b>Inactive Course Start Dates:</b> {comma_separated_start_dates}
+            """
+
+            print(
+                f"  Plotting INACTIVE location: '{location_name}' at [{latitude},{longitude}] with past start dates: {comma_separated_start_dates}"
+            )
+            folium.CircleMarker(
+                location=[latitude, longitude],
+                popup=folium.Popup(popup_html, max_width=300),
+                color="#808080",  # Gray color for border
+                fill=True,
+                fill_color="#D3D3D3",  # LightGray for fill
+                fill_opacity=0.5,
+                radius=6,  # Slightly smaller radius
+            ).add_to(maryland_map)
 
     # Add legend
     # Get the colors and month names
@@ -215,7 +269,12 @@ def create_map(
     legend_header_height_px = 38  # Approximate height of the header in pixels
     legend_header_height_css = f"{legend_header_height_px}px"
 
-    legend_items_html = ""
+    legend_items_html = """
+    <div style="display: flex; align-items: center; margin-bottom: 3px;">
+        <i style="background:#D3D3D3; width: 15px; height: 15px; display: inline-block; margin-right: 5px; border: 1px solid #888;"></i>
+        <span>Inactive Classes</span>
+    </div>
+    """
     for month_num in sorted_months:
         color = month_colors[month_num]
         name = month_names[month_num]
@@ -335,11 +394,145 @@ def create_map(
 
 
 if __name__ == "__main__":
-    json_file = "current_firefighter_I_classes.json"
+    all_courses_file = "mfri_firefigher_I_old_and_new_courses.json"
+    current_classes_file = "current_firefighter_I_classes.json"
     output_html = "docs/index.html"
     geojson_boundary_file = "maryland-single.geojson"  # Place your GeoJSON file here
 
-    create_map(json_file, output_html, geojson_boundary_file)
+    all_courses_data = []
+    try:
+        with open(all_courses_file, "r") as f:
+            all_courses_data = json.load(f)
+        print(f"Loaded {len(all_courses_data)} records from {all_courses_file}")
+    except FileNotFoundError:
+        print(
+            f"Error: File not found {all_courses_file}. Starting with empty data for all courses."
+        )
+    except json.JSONDecodeError:
+        print(
+            f"Error: Could not decode JSON from {all_courses_file}. Starting with empty data for all courses."
+        )
+
+    current_classes_data = []
+    try:
+        with open(current_classes_file, "r") as f:
+            current_classes_data = json.load(f)
+        print(f"Loaded {len(current_classes_data)} records from {current_classes_file}")
+    except FileNotFoundError:
+        print(
+            f"Error: File not found {current_classes_file}. Cannot proceed without current classes."
+        )
+        exit()  # Or handle appropriately
+    except json.JSONDecodeError:
+        print(
+            f"Error: Could not decode JSON from {current_classes_file}. Cannot proceed."
+        )
+        exit()  # Or handle appropriately
+
+    # Note: The create_map function currently takes a file path.
+    # This will need to be updated in a subsequent step to accept the loaded data directly.
+    # For now, we'll pass the current_classes_file path as before to keep the script runnable,
+    # though the data from current_classes_data is what we'd ideally use.
+
+    # Get a set of locationDisplayNames that have active classes
+    active_location_display_names = {
+        course.get("locationDisplayName")
+        for course in current_classes_data
+        if course.get("locationDisplayName")
+    }
+    print(
+        f"Found {len(active_location_display_names)} unique active location display names."
+    )
+
+    # Identify inactive courses (courses not in current_classes_data by courseId)
+    current_course_ids = {
+        course.get("courseId")
+        for course in current_classes_data
+        if course.get("courseId")
+    }
+    inactive_courses_data = []
+    for course in all_courses_data:
+        if course.get("courseId") not in current_course_ids:
+            inactive_courses_data.append(course)
+
+    print(
+        f"Found {len(inactive_courses_data)} courses in total that are not currently active (by courseId)."
+    )
+
+    # Process inactive courses to group by location,
+    # but only for locations that DO NOT have an active class.
+    processed_inactive_classes = {}
+    for course in inactive_courses_data:
+        location_display_name = course.get("locationDisplayName")
+        start_date = course.get("startDate")
+        lat_long = course.get("locationLatitudeLongitude")
+
+        if not location_display_name:  # Skip if essential data is missing
+            continue
+
+        # If this location already has an active class, skip adding it as an inactive-only location.
+        if location_display_name in active_location_display_names:
+            # print(f"    Skipping '{location_display_name}' for inactive plotting because it has active classes.")
+            continue
+
+        if location_display_name not in processed_inactive_classes:
+            processed_inactive_classes[location_display_name] = {
+                "lat_long": lat_long,
+                "start_dates": [start_date] if start_date else [],
+            }
+            # print(
+            #     f"    Adding '{location_display_name}' to inactive plot list. Lat/Long: {lat_long}, Initial Start Date: {start_date}"
+            # )
+        else:
+            if (
+                start_date
+                and start_date
+                not in processed_inactive_classes[location_display_name]["start_dates"]
+            ):
+                processed_inactive_classes[location_display_name]["start_dates"].append(
+                    start_date
+                )
+                # print(
+                #     f"    Appending start date '{start_date}' to existing inactive location '{location_display_name}'."
+                # )
+
+    print(
+        f"Processed {len(processed_inactive_classes)} unique locations that will be marked as having only past/inactive classes."
+    )
+    # Sort the dates in descending order (most recent first)
+    for location, details in processed_inactive_classes.items():
+        # Check if 'start_dates' key exists and the list is not empty
+        if "start_dates" in details and details["start_dates"]:
+            try:
+                # Sorts the list of strings in-place.
+                # The key converts string to datetime object for correct chronological comparison.
+                # reverse=True sorts from newest to oldest.
+                details["start_dates"].sort(
+                    key=lambda date_str: datetime.strptime(date_str, "%m-%d-%Y"),
+                    reverse=True,
+                )
+            except ValueError as e:
+                # This will catch errors if a date string doesn't match "%m-%d-%Y"
+                print(
+                    f"Error parsing dates for {location}: {e}. Dates: {details['start_dates']}"
+                )
+                # You might want to decide how to handle this: skip, log, leave unsorted, etc.
+                # For now, it will print the error and leave that specific list as it was if an error occurs mid-sort.
+                pass
+            except TypeError as e:
+                # This might catch errors if details["start_dates"] is not a list or contains non-string items
+                print(
+                    f"TypeError for {location}: {e}. 'start_dates' might not be a list of strings. Value: {details['start_dates']}"
+                )
+                pass
+
+    create_map(
+        current_classes_file,
+        output_html,
+        geojson_boundary_file,
+        inactive_class_locations_data=processed_inactive_classes,
+    )
+
     # Check if the file was created before printing success,
     # as create_map has its own error handling and might return early.
     if os.path.exists(output_html):
