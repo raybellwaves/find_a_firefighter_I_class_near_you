@@ -1,20 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firefighter Class Map</title>
-    <style>
-        body { font-family: sans-serif; margin: 40px; text-align: center; }
-        h1 { color: #333; }
-        a { color: #007bff; text-decoration: none; font-size: 1.2em; }
-        a:hover { text-decoration: underline; }
-    </style>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a36182ce564a6ccb27a26e67589cb32b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
 </head>
 <body>
-    <h1>Firefighter Class Map</h1>
-    <p>This page provides a link to the geospatial map of current firefighter I classes.</p>
-    <p><a href="docs/firefighter_classes_map.html">View the Firefighter Class Map</a></p>
+    
+    
+            <div class="folium-map" id="map_a36182ce564a6ccb27a26e67589cb32b" ></div>
+        
 </body>
+<script>
+    
+    
+            var map_a36182ce564a6ccb27a26e67589cb32b = L.map(
+                "map_a36182ce564a6ccb27a26e67589cb32b",
+                {
+                    center: [39.0, -76.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdd6507c5c30ff5602d987fffb5d6c59 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bdd6507c5c30ff5602d987fffb5d6c59.addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+            var marker_e2bf9277686ed2eb94e9736485c94177 = L.marker(
+                [38.5489633, -76.9541404],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_72006d79d2c03ea2db9ac9d89812c30a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd6dc60b73ea095e82d0e5f8d8626ba5 = $(`<div id="html_cd6dc60b73ea095e82d0e5f8d8626ba5" style="width: 100.0%; height: 100.0%;">MFRI Southern Maryland Regional Training Center<br>Course ID: FIRE-101-S069-2025</div>`)[0];
+                popup_72006d79d2c03ea2db9ac9d89812c30a.setContent(html_cd6dc60b73ea095e82d0e5f8d8626ba5);
+            
+        
+
+        marker_e2bf9277686ed2eb94e9736485c94177.bindPopup(popup_72006d79d2c03ea2db9ac9d89812c30a)
+        ;
+
+        
+    
+    
+            var marker_5339ff12f154b62ae87fc5cc58d92460 = L.marker(
+                [39.420460899999995, -76.27894859999999],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_5bbfd3966dd758ddd64a51be74df2620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c02e71db3a31f71f3529a1f68cb59c8 = $(`<div id="html_1c02e71db3a31f71f3529a1f68cb59c8" style="width: 100.0%; height: 100.0%;">MFRI North East Regional Training Center<br>Course ID: FIRE-101-S053-2025</div>`)[0];
+                popup_5bbfd3966dd758ddd64a51be74df2620.setContent(html_1c02e71db3a31f71f3529a1f68cb59c8);
+            
+        
+
+        marker_5339ff12f154b62ae87fc5cc58d92460.bindPopup(popup_5bbfd3966dd758ddd64a51be74df2620)
+        ;
+
+        
+    
+    
+            var marker_e2d90590a2f18ae76797cc0132f72577 = L.marker(
+                [39.6217956, -79.31860350000001],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_35d23e170788c182f3dabdeb9956ee9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad4f6a77aa7f54b95ebc5ed5d2976e1d = $(`<div id="html_ad4f6a77aa7f54b95ebc5ed5d2976e1d" style="width: 100.0%; height: 100.0%;">Garrett College Career Technology Training Center<br>Course ID: FIRE-101-S002-2026</div>`)[0];
+                popup_35d23e170788c182f3dabdeb9956ee9e.setContent(html_ad4f6a77aa7f54b95ebc5ed5d2976e1d);
+            
+        
+
+        marker_e2d90590a2f18ae76797cc0132f72577.bindPopup(popup_35d23e170788c182f3dabdeb9956ee9e)
+        ;
+
+        
+    
+    
+            var marker_0dbd1b09e048e0975b65ed97d943b20f = L.marker(
+                [39.5366401, -76.9925384],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_276866114ad166f8c9afddfaf5f7906c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d850877f5f8ae2e5675bba0359ce90c = $(`<div id="html_3d850877f5f8ae2e5675bba0359ce90c" style="width: 100.0%; height: 100.0%;">Carroll County Public Safety Training Center<br>Course ID: FIRE-101-S005-2026</div>`)[0];
+                popup_276866114ad166f8c9afddfaf5f7906c.setContent(html_3d850877f5f8ae2e5675bba0359ce90c);
+            
+        
+
+        marker_0dbd1b09e048e0975b65ed97d943b20f.bindPopup(popup_276866114ad166f8c9afddfaf5f7906c)
+        ;
+
+        
+    
+    
+            var marker_ca716a78b630eec756f0561a57ac1214 = L.marker(
+                [39.3806504, -77.37718029999999],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_fc3a76319b6d7d61136d5effd2310c09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d91b121f331013bf09ca0af0f7c4a14a = $(`<div id="html_d91b121f331013bf09ca0af0f7c4a14a" style="width: 100.0%; height: 100.0%;">Frederick County Training Academy<br>Course ID: FIRE-101-S004-2026</div>`)[0];
+                popup_fc3a76319b6d7d61136d5effd2310c09.setContent(html_d91b121f331013bf09ca0af0f7c4a14a);
+            
+        
+
+        marker_ca716a78b630eec756f0561a57ac1214.bindPopup(popup_fc3a76319b6d7d61136d5effd2310c09)
+        ;
+
+        
+    
+    
+            var marker_52da971b52b9f653a130b4b5b6ce783f = L.marker(
+                [38.306308, -75.88730149999999],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_a1434172d5ea67d32a7e09d9959173b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3f5369d1422ea9b2a70344cb54a4747 = $(`<div id="html_f3f5369d1422ea9b2a70344cb54a4747" style="width: 100.0%; height: 100.0%;">West Side Volunteer Fire Department (Bivalve)<br>Course ID: FIRE-101-S074-2025</div>`)[0];
+                popup_a1434172d5ea67d32a7e09d9959173b7.setContent(html_f3f5369d1422ea9b2a70344cb54a4747);
+            
+        
+
+        marker_52da971b52b9f653a130b4b5b6ce783f.bindPopup(popup_a1434172d5ea67d32a7e09d9959173b7)
+        ;
+
+        
+    
+    
+            var marker_bac7fa30ac6e8a3fe3a0aa6b4b3f9f7e = L.marker(
+                [38.1626119, -75.3849411],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_a41ed4bfc5550b3e7f58f3e0a34a7ced = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31b1e9427e6c184ef299cba56099fa7f = $(`<div id="html_31b1e9427e6c184ef299cba56099fa7f" style="width: 100.0%; height: 100.0%;">Snow Hill Volunteer Fire Company<br>Course ID: FIRE-101-S001-2026</div>`)[0];
+                popup_a41ed4bfc5550b3e7f58f3e0a34a7ced.setContent(html_31b1e9427e6c184ef299cba56099fa7f);
+            
+        
+
+        marker_bac7fa30ac6e8a3fe3a0aa6b4b3f9f7e.bindPopup(popup_a41ed4bfc5550b3e7f58f3e0a34a7ced)
+        ;
+
+        
+    
+    
+            var marker_f4eadd9900c245dc00ce422a9e02f35d = L.marker(
+                [39.3083759, -76.9197794],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_56e29638667a1582f4372ca51a376cf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87a54bc0db8dfe5d3cad6940f7c21397 = $(`<div id="html_87a54bc0db8dfe5d3cad6940f7c21397" style="width: 100.0%; height: 100.0%;">Howard County DFRS Training Academy<br>Course ID: FIRE-101-S006-2026</div>`)[0];
+                popup_56e29638667a1582f4372ca51a376cf7.setContent(html_87a54bc0db8dfe5d3cad6940f7c21397);
+            
+        
+
+        marker_f4eadd9900c245dc00ce422a9e02f35d.bindPopup(popup_56e29638667a1582f4372ca51a376cf7)
+        ;
+
+        
+    
+    
+            var marker_20cd9a5039145064612101869603d0f7 = L.marker(
+                [39.5666799, -77.7309981],
+                {
+}
+            ).addTo(map_a36182ce564a6ccb27a26e67589cb32b);
+        
+    
+        var popup_f598cfd2892594adc66f37119ece1438 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_008bea60fb04bf4913703f6f2cc2dbef = $(`<div id="html_008bea60fb04bf4913703f6f2cc2dbef" style="width: 100.0%; height: 100.0%;">Washington County Public Safety Training Center<br>Course ID: FIRE-101-S003-2026</div>`)[0];
+                popup_f598cfd2892594adc66f37119ece1438.setContent(html_008bea60fb04bf4913703f6f2cc2dbef);
+            
+        
+
+        marker_20cd9a5039145064612101869603d0f7.bindPopup(popup_f598cfd2892594adc66f37119ece1438)
+        ;
+
+        
+    
+</script>
 </html>
