@@ -6,12 +6,12 @@
 # ]
 # ///
 # uv run classes.py
-import requests  # For fetching HTML from URL
-from bs4 import BeautifulSoup
+import requests  # type: ignore
+from bs4 import BeautifulSoup  # type: ignore
 import json
 from datetime import datetime
 import re
-import os  # For checking if mfri_locations.json exists
+import os
 
 
 def extract_text_after_colon(tag, label):

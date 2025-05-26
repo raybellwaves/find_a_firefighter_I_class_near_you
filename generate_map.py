@@ -7,7 +7,7 @@
 # uv run generate_map.py
 import json
 from datetime import datetime
-import folium
+import folium  # type: ignore
 import os
 
 
@@ -306,7 +306,7 @@ def create_map(
 
     # Add footer text
     footer_html = f"""
-                 <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #333; line-height: 1.6;">
+                 <div style="text-align: center; margin-top: 10px; font-size: 12px; color: #333; line-height: 1.6;">
                      Last updated: {last_updated_timestamp}
                      | Vibe coded with AI. May contain errors.
                      | Color is based on month when the class starts. See Legend for more information.
