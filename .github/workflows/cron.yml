@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 0 * * *' # Run daily at midnight UTC
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  id-token: write
 
 jobs:
   uv-example:
