@@ -371,6 +371,7 @@ def create_map(
                      Last updated: {last_updated_timestamp}
                      | Vibe coded with AI. May contain errors.
                      | Color is based on month when the class starts. See Legend for more information.
+                     | Black color shows inactive classes that have no current classes at this location but may do in the future.
                      | Data taken from <a href="https://www.mfri.org/course/msfs/FIRE/101/" target="_blank" style="color: #007bff; text-decoration: none;">MFRI Firefighter I Courses</a>
                      | Source code available on <a href="https://github.com/raybellwaves/find_a_firefighter_I_class_near_you" target="_blank" style="color: #007bff; text-decoration: none;">GitHub</a>
                  </div>
