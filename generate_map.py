@@ -7,6 +7,7 @@
 # uv run generate_map.py
 import json
 from datetime import datetime
+from folium.plugins import LocateControl  # type: ignore
 import folium  # type: ignore
 import os
 
@@ -272,7 +273,7 @@ def create_map(
 
     legend_items_html = """
     <div style="display: flex; align-items: center; margin-bottom: 3px;">
-        <i style="background:#D3D3D3; width: 15px; height: 15px; display: inline-block; margin-right: 5px; border: 1px solid #888;"></i>
+        <i style="background:#000000; width: 15px; height: 15px; display: inline-block; margin-right: 5px; border: 1px solid #555;"></i>
         <span>Inactive Classes</span>
     </div>
     """
@@ -375,6 +376,9 @@ def create_map(
                  </div>
                  """
     maryland_map.get_root().html.add_child(folium.Element(footer_html))
+
+    # Add LocateControl button for "zoom to current location"
+    LocateControl().add_to(maryland_map)
 
     # Create output directory if it doesn't exist
     output_dir = os.path.dirname(output_html_path)
