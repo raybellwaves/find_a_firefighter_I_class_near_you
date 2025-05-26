@@ -140,6 +140,7 @@ def create_map(
             class_time = item.get("firstClassTime", "N/A")
             directions_url = item.get("locationGoogleMapsDirectionsUrl", "#")
             register_link = item.get("registerLink", "#")
+            registration_closes = item.get("registrationCloses", "N/A")
 
             marker_color = "#808080"  # Default color (Gray)
             if start_date:
@@ -165,6 +166,7 @@ def create_map(
             <b>Course ID:</b> {course_id}<br>
             <b>Start Date:</b> {start_date}<br>
             <b>Days:</b> {days}<br>
+            <b>Registration Closes:</b> {registration_closes}<br>
             <b>Time:</b> {class_time}<br>
             <a href="{directions_url}" target="_blank">Get Directions</a><br>
             <a href="{register_link}" target="_blank">Register Here</a>
@@ -207,34 +209,95 @@ def create_map(
         11: "November",
         12: "December",
     }
-    # Add the default gray color for "Unknown/No Date"
-    month_colors[0] = "#808080"
-    month_names[0] = "Unknown/No Date"
-
     # Sort the months by number for consistent legend order (1-12, then 0)
     sorted_months = sorted(month_colors.keys())
 
-    legend_html = """
-    <div style="position: fixed;
-                bottom: 20px; left: 50%; transform: translateX(-50%); width: 180px; max-height: 250px; overflow-y: auto;
-                border: 2px solid grey; z-index: 9999; font-size: 14px;
-                background-color: white; opacity: 0.9; padding: 10px;">
-      <div style="font-weight: bold; text-align: center; margin-bottom: 5px;">Start Month Color Key</div>
-      <div style="height: 1px; background-color: grey; margin: 5px 0;"></div> <!-- Separator -->
-    """
+    legend_header_height_px = 38  # Approximate height of the header in pixels
+    legend_header_height_css = f"{legend_header_height_px}px"
 
+    legend_items_html = ""
     for month_num in sorted_months:
         color = month_colors[month_num]
         name = month_names[month_num]
-        legend_html += f"""
+        legend_items_html += f"""
         <div style="display: flex; align-items: center; margin-bottom: 3px;">
             <i style="background:{color}; width: 15px; height: 15px; display: inline-block; margin-right: 5px; border: 1px solid #888;"></i>
             <span>{name}</span>
         </div>
         """
 
-    legend_html += """
+    legend_html = f"""
+    <style>
+        #mapLegend {{
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 130px; /* Initial width for minimized state */
+            border: 2px solid grey;
+            z-index: 9999;
+            font-size: 14px;
+            background-color: white;
+            opacity: 0.95; /* Slightly increased opacity */
+            transition: max-height 0.3s ease-in-out, width 0.3s ease-in-out;
+            max-height: {legend_header_height_css}; /* Initial height for minimized state (header only) */
+            overflow: hidden; /* Crucial for collapse animation */
+            border-radius: 5px; /* Optional: rounded corners */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+        }}
+        #legendHeader {{
+            cursor: pointer;
+            padding: 8px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom is managed by JS */
+        }}
+        #legendHeader span {{ /* Style for text within header */
+            font-weight: bold;
+        }}
+        #legendToggleIcon {{ /* Style for the [+] / [-] icon */
+            margin-left: 10px; /* Space between title and icon */
+        }}
+        #legendContent {{
+            padding: 8px; /* Padding for the items area */
+            max-height: 200px; /* Max height for the scrollable content area */
+            overflow-y: auto; /* Add scroll if content exceeds max-height */
+            display: none; /* Start minimized */
+        }}
+    </style>
+    <div id="mapLegend">
+      <div id="legendHeader" onclick="toggleLegend()">
+          <span>Color Legend</span>
+          <span id="legendToggleIcon">[+]</span>
+      </div>
+      <div id="legendContent">
+        {legend_items_html}
+      </div>
     </div>
+
+    <script type="text/javascript">
+        function toggleLegend() {{
+            var legend = document.getElementById('mapLegend');
+            var content = document.getElementById('legendContent');
+            var icon = document.getElementById('legendToggleIcon');
+            var header = document.getElementById('legendHeader');
+
+            if (content.style.display === 'none') {{ // If it's minimized, expand it
+                content.style.display = 'block';
+                icon.textContent = '[-]';
+                legend.style.maxHeight = '250px'; // Max height for expanded legend (header + content)
+                legend.style.width = '180px';     // Expanded width
+                header.style.borderBottom = '1px solid #ccc'; // Add border to header when expanded
+            }} else {{ // If it's expanded, minimize it
+                content.style.display = 'none';
+                icon.textContent = '[+]';
+                legend.style.maxHeight = '{legend_header_height_css}'; // Height of header only
+                legend.style.width = '130px';      // Minimized width
+                header.style.borderBottom = 'none'; // Remove border from header when minimized
+            }}
+        }}
+    </script>
     """
     maryland_map.get_root().html.add_child(folium.Element(legend_html))
 
