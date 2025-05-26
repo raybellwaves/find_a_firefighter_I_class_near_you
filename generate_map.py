@@ -6,7 +6,7 @@
 # ///
 # uv run generate_map.py
 import json
-from datetime import datetime  # Added import
+from datetime import datetime
 import folium
 import os
 
@@ -301,10 +301,14 @@ def create_map(
     """
     maryland_map.get_root().html.add_child(folium.Element(legend_html))
 
+    # Get current timestamp for "Last updated"
+    last_updated_timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+
     # Add footer text
-    footer_html = """
+    footer_html = f"""
                  <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #333; line-height: 1.6;">
-                     vibe coded with AI. May contain errors.
+                     Last updated: {last_updated_timestamp}
+                     | Vibe coded with AI. May contain errors.
                      | Color is based on month when the class starts. See Legend for more information.
                      | Data taken from <a href="https://www.mfri.org/course/msfs/FIRE/101/" target="_blank" style="color: #007bff; text-decoration: none;">MFRI Firefighter I Courses</a>
                      | Source code available on <a href="https://github.com/raybellwaves/find_a_firefighter_I_class_near_you" target="_blank" style="color: #007bff; text-decoration: none;">GitHub</a>
