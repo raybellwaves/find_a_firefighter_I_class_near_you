@@ -22,7 +22,7 @@
         "locationDisplayName": "Maryland Fire and Rescue Institute, University of Maryland",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJq6qaPr3Gt4kRg8RbYyGQnFg",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.9832269,-76.9289216?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S002-2026",
@@ -47,7 +47,7 @@
         "locationDisplayName": "Career Technology Training Center (CTTC) - Garrett College",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJU5flp7CtyokR7M_BO2SMyIg",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.6217956,-79.31860350000001?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S009-2026",
@@ -72,7 +72,7 @@
         "locationDisplayName": "North East Regional Training Center, Maryland Fire and Rescue Institute",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJlfFFMAnmx4kR1SpjqssXsTE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.420460899999995,-76.27894859999999?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S015-2026",
@@ -97,32 +97,7 @@
         "locationDisplayName": "Maryland Fire and Rescue Institute Upper Eastern Shore Regional Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJgXTpCetzuIkRgI6BZEur1Gg",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.035854799999996,-76.0130977?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
-    },
-    {
-        "courseId": "FIRE-101-S005-2026",
-        "registerLink": "https://www.mfri.org/register/FIRE-101-S005-2026/msfs",
-        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S005/2026",
-        "startDate": "09-02-2025",
-        "endDate": "12-20-2025",
-        "firstClassTime": "19:00 - 22:00",
-        "days": "Tuesdays, Thursdays and Saturdays",
-        "registrationOpens": "04-25-2025",
-        "registrationCloses": "08-13-2025",
-        "location": "Carroll County Public Safety Training Center",
-        "coordinateBy": "North Central",
-        "contact": "nccontact@mfri.org",
-        "locationUrlId": 185,
-        "locationRegionId": "Carroll",
-        "locationServedBy": "North Central",
-        "locationServedByUrl": "https://www.mfri.org/office/NCRTC/",
-        "locationWebsiteAddress": "Carroll County Public Safety Training Center, 50 Kate Wagner Road, Westminster MD 21157",
-        "locationFormattedAddress": "50 Kate Wagner Rd, Westminster, MD 21157, USA",
-        "locationLatitudeLongitude": "39.5366401,-76.9925384",
-        "locationDisplayName": "Carroll County Public Safety Training Center",
-        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-S4CYjM4yIkRbnqy0ZlppSE",
-        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.5366401,-76.9925384?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S010-2026",
@@ -147,32 +122,32 @@
         "locationDisplayName": "Rosedale Volunteer Fire Co",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJq6qqqtoPyIkRc3-7W5fRb9o",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.321872,-76.5123165?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
-        "courseId": "FIRE-101-S004-2026",
-        "registerLink": "https://www.mfri.org/register/FIRE-101-S004-2026/msfs",
-        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S004/2026",
-        "startDate": "09-03-2025",
-        "endDate": "12-21-2025",
+        "courseId": "FIRE-101-S005-2026",
+        "registerLink": "https://www.mfri.org/register/FIRE-101-S005-2026/msfs",
+        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S005/2026",
+        "startDate": "09-02-2025",
+        "endDate": "12-20-2025",
         "firstClassTime": "19:00 - 22:00",
-        "days": "Mondays, Wednesdays and Sundays",
+        "days": "Tuesdays, Thursdays and Saturdays",
         "registrationOpens": "04-25-2025",
-        "registrationCloses": "08-14-2025",
-        "location": "Frederick County Training Academy",
+        "registrationCloses": "08-13-2025",
+        "location": "Carroll County Public Safety Training Center",
         "coordinateBy": "North Central",
         "contact": "nccontact@mfri.org",
-        "locationUrlId": 1039,
-        "locationRegionId": "Frederick",
+        "locationUrlId": 185,
+        "locationRegionId": "Carroll",
         "locationServedBy": "North Central",
         "locationServedByUrl": "https://www.mfri.org/office/NCRTC/",
-        "locationWebsiteAddress": "Frederick County Training Academy, 5370 Public Safety Pl, Frederick MD 21704",
-        "locationFormattedAddress": "5370 Public Safety Pl, Frederick, MD 21704, USA",
-        "locationLatitudeLongitude": "39.3806504,-77.37718029999999",
-        "locationDisplayName": "Public Safety Training Facility",
-        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
-        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "locationWebsiteAddress": "Carroll County Public Safety Training Center, 50 Kate Wagner Road, Westminster MD 21157",
+        "locationFormattedAddress": "50 Kate Wagner Rd, Westminster, MD 21157, USA",
+        "locationLatitudeLongitude": "39.5366401,-76.9925384",
+        "locationDisplayName": "Carroll County Public Safety Training Center",
+        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-S4CYjM4yIkRbnqy0ZlppSE",
+        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.5366401,-76.9925384?travelmode=driving",
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S014-2026",
@@ -197,32 +172,32 @@
         "locationDisplayName": "Anne Arundel County Fire Training Academy",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJMSP6vzv7t4kRXqKG3mMdzyY",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.099373799999995,-76.6212584?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
-        "courseId": "FIRE-101-S074-2025",
-        "registerLink": "https://www.mfri.org/register/FIRE-101-S074-2025/msfs",
-        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S074/2025",
-        "startDate": "09-08-2025",
-        "endDate": "12-31-2025",
+        "courseId": "FIRE-101-S004-2026",
+        "registerLink": "https://www.mfri.org/register/FIRE-101-S004-2026/msfs",
+        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S004/2026",
+        "startDate": "09-03-2025",
+        "endDate": "12-21-2025",
         "firstClassTime": "19:00 - 22:00",
-        "days": "Mondays, Wednesdays, Saturdays and Sundays",
-        "registrationOpens": "04-15-2025",
-        "registrationCloses": "08-19-2025",
-        "location": "West Side Volunteer Fire Department (Bivalve)",
-        "coordinateBy": "Lower Eastern Shore",
-        "contact": "lescontact@mfri.org",
-        "locationUrlId": 261,
-        "locationRegionId": "Wicomico",
-        "locationServedBy": "Lower Eastern Shore",
-        "locationServedByUrl": "https://www.mfri.org/office/LESRTC/",
-        "locationWebsiteAddress": "West Side Volunteer Fire Department (Bivalve), 21045 Nanticoke Rd., Bivalve MD 21814",
-        "locationFormattedAddress": "21045 Nanticoke Rd, Bivalve, MD 21814, USA",
-        "locationLatitudeLongitude": "38.306308,-75.88730149999999",
-        "locationDisplayName": "West Side Fire Department",
-        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJkff5bPCvuYkR-2TEo9sr9sg",
-        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.306308,-75.88730149999999?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "days": "Mondays, Wednesdays and Sundays",
+        "registrationOpens": "04-25-2025",
+        "registrationCloses": "08-14-2025",
+        "location": "Frederick County Training Academy",
+        "coordinateBy": "North Central",
+        "contact": "nccontact@mfri.org",
+        "locationUrlId": 1039,
+        "locationRegionId": "Frederick",
+        "locationServedBy": "North Central",
+        "locationServedByUrl": "https://www.mfri.org/office/NCRTC/",
+        "locationWebsiteAddress": "Frederick County Training Academy, 5370 Public Safety Pl, Frederick MD 21704",
+        "locationFormattedAddress": "5370 Public Safety Pl, Frederick, MD 21704, USA",
+        "locationLatitudeLongitude": "39.3806504,-77.37718029999999",
+        "locationDisplayName": "Public Safety Training Facility",
+        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
+        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S001-2026",
@@ -247,7 +222,32 @@
         "locationDisplayName": "Snow Hill Volunteer Fire Dept",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJszoQK30WuYkRrTEKUasbuRs",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.1626119,-75.3849411?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
+    },
+    {
+        "courseId": "FIRE-101-S074-2025",
+        "registerLink": "https://www.mfri.org/register/FIRE-101-S074-2025/msfs",
+        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S074/2025",
+        "startDate": "09-08-2025",
+        "endDate": "12-31-2025",
+        "firstClassTime": "19:00 - 22:00",
+        "days": "Mondays, Wednesdays, Saturdays and Sundays",
+        "registrationOpens": "04-15-2025",
+        "registrationCloses": "08-19-2025",
+        "location": "West Side Volunteer Fire Department (Bivalve)",
+        "coordinateBy": "Lower Eastern Shore",
+        "contact": "lescontact@mfri.org",
+        "locationUrlId": 261,
+        "locationRegionId": "Wicomico",
+        "locationServedBy": "Lower Eastern Shore",
+        "locationServedByUrl": "https://www.mfri.org/office/LESRTC/",
+        "locationWebsiteAddress": "West Side Volunteer Fire Department (Bivalve), 21045 Nanticoke Rd., Bivalve MD 21814",
+        "locationFormattedAddress": "21045 Nanticoke Rd, Bivalve, MD 21814, USA",
+        "locationLatitudeLongitude": "38.306308,-75.88730149999999",
+        "locationDisplayName": "West Side Fire Department",
+        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJkff5bPCvuYkR-2TEo9sr9sg",
+        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.306308,-75.88730149999999?travelmode=driving",
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S016-2026",
@@ -272,7 +272,7 @@
         "locationDisplayName": "Maryland Fire and Rescue Institute Upper Eastern Shore Regional Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJgXTpCetzuIkRgI6BZEur1Gg",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.035854799999996,-76.0130977?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S006-2026",
@@ -297,7 +297,7 @@
         "locationDisplayName": "James N. Robey Public Safety Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJjYU-bbMmyIkRLJlvHwvjWkI",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3083759,-76.9197794?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S003-2026",
@@ -322,7 +322,7 @@
         "locationDisplayName": "Washington County Public Safety Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4zEArunvyYkRhmOjkTBTahs",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.5666799,-77.7309981?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -347,7 +347,7 @@
         "locationDisplayName": "Ocean City Fire Department - Headquarters",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJz-b2xOspuYkRb-nFtF0fmB8",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.345321,-75.080556?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S012-2026",
@@ -372,7 +372,7 @@
         "locationDisplayName": "Cecil County School of Technology",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJZUyDhu2wx4kR3XcT9zyMN98",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.6484184,-75.80787649999999?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     },
     {
         "courseId": "FIRE-101-S011-2026",
@@ -397,6 +397,6 @@
         "locationDisplayName": "North East Regional Training Center, Maryland Fire and Rescue Institute",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJlfFFMAnmx4kR1SpjqssXsTE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.420460899999995,-76.27894859999999?travelmode=driving",
-        "currentDate": "2025-07-06 02:07:57"
+        "currentDate": "2025-07-07 02:05:00"
     }
 ]
