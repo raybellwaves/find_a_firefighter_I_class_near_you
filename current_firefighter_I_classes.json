@@ -1,30 +1,5 @@
 [
     {
-        "courseId": "FIRE-101-S006-2026",
-        "registerLink": "https://www.mfri.org/register/FIRE-101-S006-2026/msfs",
-        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S006/2026",
-        "startDate": "09-10-2025",
-        "endDate": "12-22-2025",
-        "firstClassTime": "19:00 - 22:00",
-        "days": "Mondays, Wednesdays and Saturdays",
-        "registrationOpens": "04-25-2025",
-        "registrationCloses": "08-21-2025",
-        "location": "Howard County DFRS Training Academy",
-        "coordinateBy": "North Central",
-        "contact": "nccontact@mfri.org",
-        "locationUrlId": 207,
-        "locationRegionId": "Howard",
-        "locationServedBy": "North Central",
-        "locationServedByUrl": "https://www.mfri.org/office/NCRTC/",
-        "locationWebsiteAddress": "Howard County DFRS Training Academy, 2200 Scott Wheeler Drive, Marriottsville MD 21104",
-        "locationFormattedAddress": "2200 Scott Wheeler Dr, Marriottsville, MD 21104, USA",
-        "locationLatitudeLongitude": "39.3083759,-76.9197794",
-        "locationDisplayName": "James N. Robey Public Safety Training Center",
-        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJjYU-bbMmyIkRLJlvHwvjWkI",
-        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3083759,-76.9197794?travelmode=driving",
-        "currentDate": "2025-09-10 01:43:59"
-    },
-    {
         "courseId": "FIRE-101-S003-2026",
         "registerLink": "https://www.mfri.org/register/FIRE-101-S003-2026/msfs",
         "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S003/2026",
@@ -47,7 +22,7 @@
         "locationDisplayName": "Washington County Public Safety Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4zEArunvyYkRhmOjkTBTahs",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.5666799,-77.7309981?travelmode=driving",
-        "currentDate": "2025-09-10 01:43:59"
+        "currentDate": "2025-09-11 01:46:49"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -72,7 +47,7 @@
         "locationDisplayName": "Ocean City Fire Department - Headquarters",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJz-b2xOspuYkRb-nFtF0fmB8",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.345321,-75.080556?travelmode=driving",
-        "currentDate": "2025-09-10 01:43:59"
+        "currentDate": "2025-09-11 01:46:49"
     },
     {
         "courseId": "FIRE-101-S012-2026",
@@ -97,7 +72,7 @@
         "locationDisplayName": "Cecil County School of Technology",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJZUyDhu2wx4kR3XcT9zyMN98",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.6484184,-75.80787649999999?travelmode=driving",
-        "currentDate": "2025-09-10 01:43:59"
+        "currentDate": "2025-09-11 01:46:49"
     },
     {
         "courseId": "FIRE-101-S011-2026",
@@ -122,7 +97,7 @@
         "locationDisplayName": "North East Regional Training Center, Maryland Fire and Rescue Institute",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJlfFFMAnmx4kR1SpjqssXsTE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.420460899999995,-76.27894859999999?travelmode=driving",
-        "currentDate": "2025-09-10 01:43:59"
+        "currentDate": "2025-09-11 01:46:49"
     },
     {
         "courseId": "FIRE-101-S028-2026",
@@ -147,6 +122,6 @@
         "locationDisplayName": "Public Safety Training Facility",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-09-10 01:43:59"
+        "currentDate": "2025-09-11 01:46:49"
     }
 ]
