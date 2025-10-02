@@ -1,30 +1,5 @@
 [
     {
-        "courseId": "FIRE-101-S003-2026",
-        "registerLink": null,
-        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S003/2026",
-        "startDate": "10-01-2025",
-        "endDate": "01-28-2026",
-        "firstClassTime": "18:30 - 21:30",
-        "days": "Wednesdays and Sundays",
-        "registrationOpens": "04-13-2025",
-        "registrationCloses": "09-12-2025",
-        "location": "Washington County Public Safety Training Center",
-        "coordinateBy": "Western Maryland",
-        "contact": "wmcontact@mfri.org",
-        "locationUrlId": 436,
-        "locationRegionId": "Washington",
-        "locationServedBy": "Western Maryland",
-        "locationServedByUrl": "https://www.mfri.org/office/WMRTC/",
-        "locationWebsiteAddress": "Washington County Public Safety Training Center, 18350 Public Safety Place, Hagerstown MD 21740",
-        "locationFormattedAddress": "18350 Public Safety Pl, Hagerstown, MD 21740, USA",
-        "locationLatitudeLongitude": "39.5666799,-77.7309981",
-        "locationDisplayName": "Washington County Public Safety Training Center",
-        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ4zEArunvyYkRhmOjkTBTahs",
-        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.5666799,-77.7309981?travelmode=driving",
-        "currentDate": "2025-10-01 01:56:03"
-    },
-    {
         "courseId": "FIRE-101-S012-2026",
         "registerLink": null,
         "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S012/2026",
@@ -47,7 +22,7 @@
         "locationDisplayName": "Cecil County School of Technology",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJZUyDhu2wx4kR3XcT9zyMN98",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.6484184,-75.80787649999999?travelmode=driving",
-        "currentDate": "2025-10-01 01:56:03"
+        "currentDate": "2025-10-02 01:43:52"
     },
     {
         "courseId": "FIRE-101-S011-2026",
@@ -72,7 +47,7 @@
         "locationDisplayName": "North East Regional Training Center, Maryland Fire and Rescue Institute",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJlfFFMAnmx4kR1SpjqssXsTE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.420460899999995,-76.27894859999999?travelmode=driving",
-        "currentDate": "2025-10-01 01:56:03"
+        "currentDate": "2025-10-02 01:43:52"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -97,7 +72,7 @@
         "locationDisplayName": "Ocean City Fire Department - Headquarters",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJz-b2xOspuYkRb-nFtF0fmB8",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.345321,-75.080556?travelmode=driving",
-        "currentDate": "2025-10-01 01:56:03"
+        "currentDate": "2025-10-02 01:43:52"
     },
     {
         "courseId": "FIRE-101-S028-2026",
@@ -122,6 +97,6 @@
         "locationDisplayName": "Public Safety Training Facility",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-10-01 01:56:03"
+        "currentDate": "2025-10-02 01:43:52"
     }
 ]
