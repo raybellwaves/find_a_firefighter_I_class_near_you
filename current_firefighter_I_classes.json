@@ -22,7 +22,7 @@
         "locationDisplayName": "Cecil County School of Technology",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJZUyDhu2wx4kR3XcT9zyMN98",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.6484184,-75.80787649999999?travelmode=driving",
-        "currentDate": "2025-10-17 01:47:03"
+        "currentDate": "2025-10-18 01:42:17"
     },
     {
         "courseId": "FIRE-101-S011-2026",
@@ -47,7 +47,7 @@
         "locationDisplayName": "North East Regional Training Center, Maryland Fire and Rescue Institute",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJlfFFMAnmx4kR1SpjqssXsTE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.420460899999995,-76.27894859999999?travelmode=driving",
-        "currentDate": "2025-10-17 01:47:03"
+        "currentDate": "2025-10-18 01:42:17"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -72,7 +72,7 @@
         "locationDisplayName": "Ocean City Fire Department - Headquarters",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJz-b2xOspuYkRb-nFtF0fmB8",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.345321,-75.080556?travelmode=driving",
-        "currentDate": "2025-10-17 01:47:03"
+        "currentDate": "2025-10-18 01:42:17"
     },
     {
         "courseId": "FIRE-101-S028-2026",
@@ -97,6 +97,6 @@
         "locationDisplayName": "Public Safety Training Facility",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-10-17 01:47:03"
+        "currentDate": "2025-10-18 01:42:17"
     }
 ]
