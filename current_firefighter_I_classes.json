@@ -22,7 +22,32 @@
         "locationDisplayName": "North East Regional Training Center, Maryland Fire and Rescue Institute",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJlfFFMAnmx4kR1SpjqssXsTE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.420460899999995,-76.27894859999999?travelmode=driving",
-        "currentDate": "2025-10-21 01:50:10"
+        "currentDate": "2025-10-22 01:53:34"
+    },
+    {
+        "courseId": "FIRE-101-S038-2026",
+        "registerLink": "https://www.mfri.org/register/FIRE-101-S038-2026/msfs",
+        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S038/2026",
+        "startDate": "12-08-2025",
+        "endDate": "02-25-2026",
+        "firstClassTime": "19:00 - 22:00",
+        "days": "Mondays, Wednesdays, Saturdays and Sundays",
+        "registrationOpens": "06-08-2025",
+        "registrationCloses": "11-18-2025",
+        "location": "Dunkirk Volunteer Fire Department, Inc. - Co. 5",
+        "coordinateBy": "Southern Maryland",
+        "contact": "smcontact@mfri.org",
+        "locationUrlId": 283,
+        "locationRegionId": "Calvert",
+        "locationServedBy": "Southern Maryland",
+        "locationServedByUrl": "https://www.mfri.org/office/SMRTC/",
+        "locationWebsiteAddress": "Dunkirk Volunteer Fire Department, Inc. - Co. 5, PO Box 86, West Ward Road, Dunkirk MD 20754",
+        "locationFormattedAddress": "3170 W Ward Rd, Dunkirk, MD 20754, USA",
+        "locationLatitudeLongitude": "38.7177599,-76.6649979",
+        "locationDisplayName": "Dunkirk Volunteer Fire Dept",
+        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJSXh3g5-at4kRETFqq8SYBlE",
+        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.7177599,-76.6649979?travelmode=driving",
+        "currentDate": "2025-10-22 01:53:34"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -47,7 +72,7 @@
         "locationDisplayName": "Ocean City Fire Department - Headquarters",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJz-b2xOspuYkRb-nFtF0fmB8",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.345321,-75.080556?travelmode=driving",
-        "currentDate": "2025-10-21 01:50:10"
+        "currentDate": "2025-10-22 01:53:34"
     },
     {
         "courseId": "FIRE-101-S028-2026",
@@ -72,6 +97,6 @@
         "locationDisplayName": "Public Safety Training Facility",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-10-21 01:50:10"
+        "currentDate": "2025-10-22 01:53:34"
     }
 ]
