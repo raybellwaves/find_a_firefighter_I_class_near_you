@@ -22,7 +22,7 @@
         "locationDisplayName": "Dunkirk Volunteer Fire Dept",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJSXh3g5-at4kRETFqq8SYBlE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.7177599,-76.6649979?travelmode=driving",
-        "currentDate": "2025-11-06 01:54:22"
+        "currentDate": "2025-11-07 01:53:06"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -47,7 +47,7 @@
         "locationDisplayName": "Worcester County Developmental Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJNw5rNQUjuYkRb66P3av8MH4",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.2532192,-75.28401199999999?travelmode=driving",
-        "currentDate": "2025-11-06 01:54:22"
+        "currentDate": "2025-11-07 01:53:06"
     },
     {
         "courseId": "FIRE-101-S028-2026",
@@ -72,7 +72,7 @@
         "locationDisplayName": "Public Safety Training Facility",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-11-06 01:54:22"
+        "currentDate": "2025-11-07 01:53:06"
     },
     {
         "courseId": "FIRE-101-S042-2026",
@@ -97,7 +97,7 @@
         "locationDisplayName": "James N. Robey Public Safety Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJjYU-bbMmyIkRLJlvHwvjWkI",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3083759,-76.9197794?travelmode=driving",
-        "currentDate": "2025-11-06 01:54:22"
+        "currentDate": "2025-11-07 01:53:06"
     },
     {
         "courseId": "FIRE-101-S041-2026",
@@ -122,7 +122,7 @@
         "locationDisplayName": "Public Safety Training Facility",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-11-06 01:54:22"
+        "currentDate": "2025-11-07 01:53:06"
     },
     {
         "courseId": "FIRE-101-S040-2026",
@@ -147,6 +147,6 @@
         "locationDisplayName": "Carroll County Public Safety Training Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ-S4CYjM4yIkRbnqy0ZlppSE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.5366401,-76.9925384?travelmode=driving",
-        "currentDate": "2025-11-06 01:54:22"
+        "currentDate": "2025-11-07 01:53:06"
     }
 ]
