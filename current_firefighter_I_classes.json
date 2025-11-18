@@ -22,7 +22,7 @@
         "locationDisplayName": "Dunkirk Volunteer Fire Dept",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJSXh3g5-at4kRETFqq8SYBlE",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.7177599,-76.6649979?travelmode=driving",
-        "currentDate": "2025-11-17 01:55:44"
+        "currentDate": "2025-11-18 01:54:06"
     },
     {
         "courseId": "FIRE-101-S019-2026",
@@ -47,31 +47,6 @@
         "locationDisplayName": "Worcester County Developmental Center",
         "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJNw5rNQUjuYkRb66P3av8MH4",
         "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//38.2532192,-75.28401199999999?travelmode=driving",
-        "currentDate": "2025-11-17 01:55:44"
-    },
-    {
-        "courseId": "FIRE-101-S028-2026",
-        "registerLink": "https://www.mfri.org/register/FIRE-101-S028-2026/msfs",
-        "classUrl": "https://www.mfri.org/course/msfs/FIRE/101/S028/2026",
-        "startDate": "01-13-2026",
-        "endDate": "04-02-2026",
-        "firstClassTime": "12:00 - 15:00",
-        "days": "Mondays, Tuesdays, Wednesdays, Thursdays and Fridays",
-        "registrationOpens": "07-13-2025",
-        "registrationCloses": "12-24-2025",
-        "location": "Frederick County Training Center",
-        "coordinateBy": "North Central",
-        "contact": "nccontact@mfri.org",
-        "locationUrlId": 184,
-        "locationRegionId": "Frederick",
-        "locationServedBy": "North Central",
-        "locationServedByUrl": "https://www.mfri.org/office/NCRTC/",
-        "locationWebsiteAddress": "Frederick County Training Center, 5370 Public Safety Place, Frederick MD 21704",
-        "locationFormattedAddress": "5370 Public Safety Pl, Frederick, MD 21704, USA",
-        "locationLatitudeLongitude": "39.3806504,-77.37718029999999",
-        "locationDisplayName": "Public Safety Training Facility",
-        "locationGoogleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ0UKUxanQyYkRu8oNUyZiDug",
-        "locationGoogleMapsDirectionsUrl": "https://www.google.com/maps/dir//39.3806504,-77.37718029999999?travelmode=driving",
-        "currentDate": "2025-11-17 01:55:44"
+        "currentDate": "2025-11-18 01:54:06"
     }
 ]
